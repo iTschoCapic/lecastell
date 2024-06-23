@@ -1,0 +1,141 @@
+/* ------------------------------------------------------------ */
+/* ----------------------  General Rules ---------------------- */
+/* ------------------------------------------------------------ */
+
+html{
+    font-family: 'Croissant One';
+    scroll-behavior: smooth;
+    background-color: #1f1e1e;
+}
+
+/* ------------------------------------------------------------ */
+/* ---------------------  Navigation Menu --------------------- */
+/* ------------------------------------------------------------ */
+
+body nav{
+    position: absolute;
+    z-index: 1;
+    display:grid;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(58, 57, 57, 0.75);
+}
+
+body nav .onglets{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+}
+
+body nav .onglets :hover{
+    width: fit-content;
+    margin-bottom: -1.5rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 0.2rem solid #ffffff;
+}
+
+body nav .onglets a {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10rem;
+}
+
+body nav .onglets .menu:hover {
+    border-bottom: none;
+}
+
+body nav .onglets .menu .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+body nav .onglets .menu .submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1; /* Ensure it appears above other content */
+    width: max-content;
+}
+
+body nav .onglets .menu .submenu:hover {
+    border-bottom: none;
+    padding-bottom: none;
+}
+
+body nav .onglets .menu .submenu li {
+    margin: 0;
+}
+
+body nav .onglets .menu .submenu a {
+    display: block;
+    left: auto;
+    padding: 0.5rem 0rem;
+    color: #ffffff;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* ------------------------------------------------------------- */
+/* ------------  Images : Logo, Background Interior ------------ */
+/* ------------------------------------------------------------- */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body .header {
+    position: relative;
+}
+
+body .logo{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 10rem;
+}
+
+body .logo a {
+    width: 9rem;
+    transition: ease 0.3s;
+}
+
+body .logo a:hover{
+    opacity: 0.7;
+    transition: ease 0.3s;
+}
+
+body .logo a img{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+/* ---------------------  Text over Images --------------------- */
+
+body .text-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('./resources/interior_image.jpg');
+    background-position: center 40%;
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Resize the background image to cover the entire background */
+    color: #ffffff;
+    padding: 20rem;
+}
