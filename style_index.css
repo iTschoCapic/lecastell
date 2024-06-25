@@ -3,13 +3,13 @@
 /* ------------------------------------------------------------ */
 
 html{
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
     background-color: #1f1e1e;
 }
 
 h1 {
-    font-family: 'Antonio';
+    font-family: 'Antonio', sans-serif;
 }
 
 /* ------------------------------------------------------------ */
