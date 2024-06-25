@@ -3,9 +3,13 @@
 /* ------------------------------------------------------------ */
 
 html{
-    font-family: 'Croissant One';
+    font-family: 'Lato';
     scroll-behavior: smooth;
     background-color: #1f1e1e;
+}
+
+h1 {
+    font-family: 'Antonio';
 }
 
 /* ------------------------------------------------------------ */
@@ -22,7 +26,7 @@ body nav{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: rgba(58, 57, 57, 0.75);
+    background-color: rgba(58, 57, 57, 0.60);
 }
 
 body nav .onglets{
@@ -85,7 +89,7 @@ body nav .onglets .menu .submenu a {
 }
 
 /* ------------------------------------------------------------- */
-/* ------------  Images : Logo, Background Interior ------------ */
+/* --------------  Image : Logo, Background color -------------- */
 /* ------------------------------------------------------------- */
 
 body{
@@ -123,9 +127,10 @@ body .logo a img{
     max-height: 100%;
     width: 8rem;
     border-radius: 50%;
+    background-color: rgba(39, 38, 38, 0.849);
 }
 
-/* ---------------------  Text over Images --------------------- */
+/* ---------------------  'Text' over background image --------------------- */
 
 body .text-header{
     position: relative;
@@ -138,4 +143,27 @@ body .text-header{
     background-size: cover; /* Resize the background image to cover the entire background */
     color: #ffffff;
     padding: 20rem;
+    min-height: 19rem;
+    max-height: 19rem;
+}
+
+body .text-header img {
+    max-width: 25%;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------  Main : Card dish --------------------- */
+/* ------------------------------------------------------------- */
+
+body main .weekly_recommendation {
+    background-color: black;
+}
+
+body main .weekly_recommendation .dish_image img {
+    padding-left: 10rem;
+    padding-top: 10rem;
+    max-height: 30rem;
+    height: 30rem;
+    width: 30rem;
+    object-fit: cover;
 }
