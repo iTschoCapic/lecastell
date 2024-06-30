@@ -179,13 +179,13 @@ body main .weekly_recommendation .description {
     color: white;
 }
 
-body main .reviews {
-    color: white;
-}
-
 /* ------------------------------------------------------------- */
 /* -------------------------  Reviews ------------------------- */
 /* ------------------------------------------------------------- */
+
+body main .reviews {
+    color: white;
+}
 
 #reviews-container {
     color: #ffffff;
