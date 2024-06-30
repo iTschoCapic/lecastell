@@ -8,15 +8,14 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjueLeWwo-hWgOhrjz9juKkb0EzoahbI&callback=initMap&libraries=maps,places"></script>
-        <script src="./script.js"></script>
-        <script src="./map.js"></script>
+        <script src="./reviews.js"></script>
     </head>
     <body>
         <div class="header">
             <nav>
                 <div class="onglets">
+                    <a href="./history.html">Histoire</a>
                     <div class="menu">
-                        <a href="./history.html">Histoire</a>
                         <a href="./menu_card.html">Menus</a>
                         <ul class="submenu">
                             <li><a href="./lunch.html">Lunch</a></li>
@@ -38,10 +37,18 @@
         </div>
         <main>
             <div class="weekly_recommendation">
-                <div class="dish_image"><img src="./resources/test_dish.jpg" alt="dish of the week image"></div>
-                <div class="description"><h4></h4></div>
+                <div class="dish">
+                    <div class="dish_image">
+                        <img src="./resources/test_dish.jpg" alt="dish of the week image">
+                    </div>
+                    <div class="description">
+                        <h4>Dish Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ad. Eos odit reiciendis fugiat? Aperiam fugit temporibus voluptas cupiditate cum recusandae expedita eius aliquid quae blanditiis? Sit deleniti obcaecati vitae?</p>
+                    </div>
+                </div>
             </div>
-        <div class="reviews"></div>
+        <div class="reviews-container">
+        </div>
         </main>
     </body>
 
