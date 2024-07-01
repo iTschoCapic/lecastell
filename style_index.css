@@ -98,11 +98,18 @@ body{
 
 body .header {
     position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('./resources/interior_image.jpg');
+    background-position: center 40%;
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Resize the background image to cover the entire background */
+    color: #ffffff;
+    min-height: 50rem;
+    max-height: 50rem;
 }
 
 body .logo{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: left;
     align-items: left;
@@ -131,23 +138,17 @@ body .logo a img{
 
 /* ---------------------  'Text' over background image --------------------- */
 
-body .text-header{
-    position: relative;
+body .text-header {
+    z-index: 2;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('./resources/interior_image.jpg');
-    background-position: center 40%;
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-size: cover; /* Resize the background image to cover the entire background */
-    color: #ffffff;
-    padding: 20rem;
-    min-height: 19rem;
-    max-height: 19rem;
+    height: 50rem;
 }
 
 body .text-header img {
-    max-width: 25%;
+    min-height: 50%;
+    max-height: 50%;
 }
 
 /* ------------------------------------------------------------- */
@@ -175,7 +176,11 @@ body main .weekly_recommendation .dish_image img {
 }
 
 body main .weekly_recommendation .description {
-    padding-left: 3rem;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+    border-left: 0.4rem solid ;
+    height: 10rem;
+    padding-left: 1.3rem;
     color: white;
 }
 
@@ -214,4 +219,27 @@ body main .reviews {
 
 .rating {
     color: #f39c12;
+}
+
+/* ------------------------------------------------------------- */
+/* -------------  Footer : Legal Notices, Contacts ------------- */
+/* ------------------------------------------------------------- */
+
+footer {
+    color: #ffffff;
+    display: flex;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-style: italic;
+}
+
+footer .contacts {
+    padding-left: 20%;
+}
+
+footer .gmap {
+    padding-left: 20%;
 }
