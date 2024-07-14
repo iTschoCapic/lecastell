@@ -61,6 +61,7 @@ body nav .onglets .menu:hover {
 
 body nav .onglets .menu:hover .submenu {
     display: block; /* Show submenu on hover */
+    padding-bottom: 1.3rem;
 }
 
 body nav .onglets .menu .submenu {
@@ -70,24 +71,24 @@ body nav .onglets .menu .submenu {
     list-style: none;
     z-index: 1; /* Ensure it appears above other content */
     width: max-content;
+    padding-top: 1rem;
     background-color: rgba(58, 57, 57, 0.60);
 }
 
 body nav .onglets .menu .submenu:hover {
     border-bottom: none;
-    padding-bottom: none;
-}
-
-body nav .onglets .menu .submenu li {
-    margin: 0;
 }
 
 body nav .onglets .menu .submenu a {
     display: block;
-    left: auto;
-    padding: 0.5rem 0rem;
-    color: #ffffff;
-    white-space: nowrap; /* Prevent text from wrapping */
+    border-bottom: none;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.1rem;
+}
+
+body nav .onglets .menu .submenu li {
+    margin: 0;
+    padding: 0;
 }
 
 /* ------------------------------------------------------------- */
