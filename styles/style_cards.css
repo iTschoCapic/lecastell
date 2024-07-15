@@ -102,7 +102,7 @@ body{
 
 body .header {
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('./resources/interior_image.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('../resources/interior_image.jpg');
     background-position: center 40%;
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-size: cover; /* Resize the background image to cover the entire background */
@@ -112,7 +112,7 @@ body .header {
 }
 
 body .logo{
-    position: absolute;
+    position: fixed;
     z-index: 2;
     display: flex;
     justify-content: left;
@@ -141,7 +141,7 @@ body .logo a img{
 }
 
 body .language{
-    position: absolute;
+    position: fixed;
     z-index: 2;
     display: flex;
     justify-content: right;
@@ -170,7 +170,6 @@ body .language a img{
 
 body .language:hover .sublanguage {
     display: block; /* Show submenu on hover */
-    background-color: #000000;
 }
 
 body .language .sublanguage {
@@ -181,8 +180,7 @@ body .language .sublanguage {
     z-index: 1; /* Ensure it appears above other content */
     padding-top: 1rem;
     padding-bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-left: 0;
 }
 
 body .language .sublanguage img{
@@ -190,7 +188,6 @@ body .language .sublanguage img{
     max-width: 100%;
     max-height: 100%;
     width: 4rem;
-    border-radius: 50%;
     transition: ease 0.3s;
 }
 
