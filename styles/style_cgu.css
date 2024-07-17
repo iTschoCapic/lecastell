@@ -176,6 +176,9 @@ body main #CGU p {
 /* ------------------------------------------------------------- */
 
 footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
     color: #ffffff;
     display: flex;
     background-color: #000000;
@@ -191,6 +194,6 @@ footer .contacts {
     padding-left: 20%;
 }
 
-footer .gmap {
+footer .copyright {
     padding-left: 20%;
 }
