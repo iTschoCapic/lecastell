@@ -5,8 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wines - Le Castell</title>
         <link rel="stylesheet" href="../styles/style_cards.css">
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjueLeWwo-hWgOhrjz9juKkb0EzoahbI&callback=initMap&libraries=maps,places"></script>
-        <script src="../reviews.js"></script>
+        <script src="../animations.js"></script>
     </head>
     <body>
         <div class="header">
@@ -32,12 +31,12 @@
                 </div>
             </nav>
             <div class="language">
-                <a href="./wines.html"><img src="../resources/flags/royaume-unis.png" alt="English Language"></a>
-                <ul class="sublanguage">
-                    <a href="../fr/wines.html"><img src="../resources/flags/france.png" alt="Langue Français"></a>
-                    <a href="../es/wines.html"><img src="../resources/flags/espagne.png" alt="Langue"></a>
-                    <a href="../ca/wines.html"><img src="../resources/flags/catalan.png" alt="Langue"></a>
-                    <a href="../de/wines.html"><img src="../resources/flags/allemagne.png" alt="Langue"></a>
+                <img class="languageIMG" onclick="toggleMenuLanguage()" src="../resources/flags/united-kingdom.png" alt="English Language">
+                <ul class="sublanguage" id="sublanguage">
+                    <a href="../fr/wines.html"><img src="../resources/flags/france.png" alt="Langue Française"></a>
+                    <a href="../es/wines.html"><img src="../resources/flags/españa.png" alt="Lengua española"></a>
+                    <a href="../ca/wines.html"><img src="../resources/flags/catalunya.png" alt="Llengua catalana"></a>
+                    <a href="../de/wines.html"><img src="../resources/flags/deutschland.png" alt="Deutsche Sprache"></a>
                 </ul>
             </div>
             <div class="text-header">
