@@ -21,7 +21,7 @@ h1 {
 
 body nav{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     display: grid;
     left: 50%;
     transform: translateX(-50%);
@@ -101,19 +101,24 @@ body{
 }
 
 body .header {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('../resources/interior_image.jpg');
-    background-position: center 40%;
+    background-position: center 20%;
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-size: cover; /* Resize the background image to cover the entire background */
     color: #ffffff;
-    min-height: 50rem;
-    max-height: 50rem;
+    min-height: 100vh;
+    max-height: 100vh;
 }
+
+/* ---------------------------  Logo --------------------------- */
 
 body .logo{
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: left;
     height: 8rem;
@@ -140,20 +145,22 @@ body .logo a img{
     background-color: rgba(39, 38, 38, 0.849);
 }
 
+/* -------------------------  Language ------------------------- */
+
 body .language{
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: right;
     right: 1rem;
-    top: 0.5rem;
-    height: 3rem;
+    top: 1rem;
+    height: 2rem;
     border-radius: 50%;
     cursor: pointer;
 }
 
 body .language img {
-    width: 3rem;
+    width: 2rem;
     transition: ease 0.3s;
 }
 
@@ -166,26 +173,31 @@ body .language .sublanguage {
     display: none; /* Hide submenu by default */
     position: absolute;
     justify-content: right;
-    left: -16rem;
+    left: -3rem;
     top: -1rem;
     list-style: none;
     flex-direction: row-reverse;
     z-index: 1; /* Ensure it appears above other content */
-    width: 12rem;
-    height: 3rem;
-    
+    width: 0rem;
+    height: 2rem;
+    cursor: default;
+}
+
+body .language .sublanguage a {
+    margin-right: 1.5rem;
 }
 
 body .language .sublanguage img{
     max-width: 100%;
     max-height: 100%;
     height: 3rem;
-    margin-right: 3.5rem;
-    transition: ease 0.3s;
+    margin-right: 2rem;
     opacity: 0.7;
 }
 
-@keyframes slideIn {
+/* --------------------  Animation Language -------------------- */
+
+@keyframes slideInLanguage {
     from {
         opacity: 0;
         transform: translateX(20px);
@@ -196,7 +208,7 @@ body .language .sublanguage img{
     }
 }
 
-@keyframes slideOut {
+@keyframes slideOutLanguage {
     from {
         opacity: 0.7;
         transform: translateX(0);
@@ -216,36 +228,33 @@ body .language .sublanguage img:hover{
     transition: ease 0.3s;
 }
 
-
-/* ---------------------  'Text' over background image --------------------- */
-
-body .text-header {
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50rem;
-}
-
-body .text-header img {
-    min-height: 50%;
-    max-height: 50%;
-}
-
 /* ------------------------------------------------------------- */
 /* --------------------  Main : Card dishes -------------------- */
 /* ------------------------------------------------------------- */
 
 body main {
     display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Optional: This ensures the main element takes the full viewport height */
+    z-index: 1;
+    
 }
 
-body main img {
+body main .card {
+    padding-top: 6rem;
     max-height: 80%;
     width: auto; /* Ensures the image scales properly */
+}
+
+body main .arrowIMG{
+    margin-top: auto;
+    cursor: pointer;
+    width: 2rem;
+    height: auto;
+    z-index: 1;
 }
 
 /* ------------------------------------------------------------- */
@@ -253,11 +262,11 @@ body main img {
 /* ------------------------------------------------------------- */
 
 footer {
+    display: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     color: #ffffff;
-    display: flex;
     background-color: #000000;
 }
 
@@ -275,23 +284,96 @@ footer .copyright {
     padding-left: 20%;
 }
 
-footer .gmap {
-    padding-left: 20%;
-}
 
+@media (max-width: 480px) {
 
+/* ------------------------------------------------------------ */
+/* ---------------------  Navigation Menu --------------------- */
+/* ------------------------------------------------------------ */
 
-
-
-
-@media ( max-width: 50em ) {
-    #image-container img { 
-        width: 50%;
+    body nav {
+        flex-direction: column;
+        padding-left: 4rem;
     }
-}
-    
-@media ( max-width: 25em ) {
-    #image-container img { 
-        width: 100%;
+
+    body nav .onglets a {
+        font-size: 0.8rem;
+        margin-right: 1.3rem;
+    }
+
+    body nav .onglets {
+        font-size: 0.8rem;
+    }
+
+/* ------------------------------------------------------------- */
+/* --------------  Image : Logo, Background color -------------- */
+/* ------------------------------------------------------------- */
+
+    body .header {
+        min-height: 90vh;
+        max-height: 90vh;
+    }
+
+    body .logo {
+        margin-top: 0.6rem;
+        margin-left: 0.5rem;
+    }
+
+    body .logo a {
+        width: 3rem;
+    }
+
+    body .logo a img {
+        width: 3rem;
+    }
+
+/* -------------------------  Language ------------------------- */
+
+    body .language {
+        right: 4rem;
+        top: 5rem;
+    }
+
+    body .language .sublanguage img {
+        height: 2rem;
+        margin-right: 2rem;
+    }
+
+/* ------------------------------------------------------------- */
+/* --------------------  Main : Card dishes -------------------- */
+/* ------------------------------------------------------------- */
+
+    body main .card {
+        margin-top: -12rem;
+        width: 90%;
+        height: auto;
+    }
+
+    /* body main .card { /////with arrow
+        margin-top: 2rem;
+        width: 90%;
+        height: auto;
+    } */
+
+
+    body main .arrowIMG {
+        display: none;
+        margin-top: auto;
+        width: 1.5rem;
+    }
+
+/* ------------------------------------------------------------- */
+/* -------------  Footer : Legal Notices, Contacts ------------- */
+/* ------------------------------------------------------------- */
+
+    footer {
+        display: flex;
+        margin-top: -6rem;
+        padding-left: 1rem;
+    }
+
+    footer .contacts,
+    footer .copyright {
+        padding-left: 0;
     }
 }
