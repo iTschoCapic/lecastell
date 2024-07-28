@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', function () {
 /* ------------------------------------------------------------- */
 
 window.onclick = function(event){
-    if (window.innerWidth <= 768){
+    if (SubLanguage && !event.target.matches('.languageIMG')) {
+        SubLanguage = false;
+        toggleMenuLanguage();
+    } else if (window.innerWidth <= 768){
         if (Modal && (event.target.matches('.close') || !event.target.matches('.card'))){
             Modal = false;
             document.getElementById('cardFull').style.display = 'none';
-        } else if (SubLanguage && !event.target.matches('.languageIMG')) {
-            SubLanguage = false;
-            toggleMenuLanguage();
         }
     }
 }
