@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bebidas - Le Castell</title>
         <link rel="stylesheet" href="../styles/style_cards.css">
+        <link rel="icon" href="../resources/favicon.ico" type="image/x-icon">
         <script src="../animations.js"></script>
     </head>
     <body>
@@ -16,16 +17,17 @@
                 <div class="onglets">
                     <a href="../history.html">Historia</a>
                     <div class="menu">
-                        <a href="../menu_card.html">Menú</a>
+                        <a href="../menu_card.html">Menú<img class="arrowMenuIMG" src="../resources/arrow_down.png" alt="flèche menu"></a>
                         <ul class="submenu">
-                            <a href="./dishes.html"><li>Platos</li></a>
-                            <a href="./desserts.html"><li>Postres</li></a>
-                            <a href="./drinks.html"><li>Bebidas</li></a>
+                            <a href="../index.html#suggestions"><li>Sugerencias</li></a>
                             <a href="./cocktails.html"><li>Cocktails</li></a>
                             <a href="./wines.html"><li>Vinos</li></a>
+                            <a href="./drinks.html"><li>Bebidas</li></a>
+                            <a href="./dishes.html"><li>Platos</li></a>
+                            <a href="./desserts.html"><li>Postres</li></a>
                         </ul>
                     </div>
-                    <a href="../index.html" class="">Acogida</a>
+                    <a href="../index.html">Acogida</a>
                     <a href="../photos.html">Fotos</a>
                     <a href="../contact.html">Contacto</a>
                 </div>
@@ -42,19 +44,18 @@
         </div>
         <main>
             <img class="card" src="../resources/cards/es/drinks.jpg" alt="Carta de bebidas">
-            <img class="arrowIMG" onclick="displayFooter()" src="../resources/arrow_up.png" alt="flèche footer">
+            <div id="cardFull" class="cardFull">
+                <span class="close">×</span>
+                <img class="cardFullImg" id="cardFullImg" src="../resources/cards/es/drinks.jpg">
+            </div>
         </main>
-        <footer id="footer">
+        <footer>
             <div class="legal_notices">
                 <div class="CGU"><a href="../cgu.html#CGU">Condiciones Generales de Uso</a></div>
             </div>
             <div class="contacts">
-                <div class="phone_number">04.68.80.72.08</div>
-                <div class="adresse">13 Rue de la Tour Carrée, 66140, Canet-en-Roussillon, France</div>
-                <div class="gmap"><a href=""></a></div>
-            </div>
-            <div class="copyright">
-                <p>Le Castell Canet</p>
+                <div class="phone_number"><a href="tel:+33468807208">04.68.80.72.08</a></div>
+                <div class="adresse"><a href="https://maps.app.goo.gl/6fJ1VZLow1axiyhf6" target="_blank">13 Rue de la Tour Carrée, 66140, Canet-en-Roussillon, France</a></div>
             </div>
         </footer>
     </body>

@@ -47,6 +47,20 @@ body nav .onglets :hover{
     border-bottom: 0.2rem solid #ffffff;
 }
 
+body nav .onglets img{
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+body nav .onglets img:hover{
+    width: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10rem;
+}
+
 body nav .onglets a {
     font-size: 1rem;
     font-weight: bold;
@@ -240,7 +254,6 @@ body main {
     align-items: center;
     height: 100vh; /* Optional: This ensures the main element takes the full viewport height */
     z-index: 1;
-    
 }
 
 body main .card {
@@ -249,12 +262,8 @@ body main .card {
     width: auto; /* Ensures the image scales properly */
 }
 
-body main .arrowIMG{
-    margin-top: auto;
-    cursor: pointer;
-    width: 2rem;
-    height: auto;
-    z-index: 1;
+body main .cardFull {
+    display: none;
 }
 
 /* ------------------------------------------------------------- */
@@ -262,12 +271,13 @@ body main .arrowIMG{
 /* ------------------------------------------------------------- */
 
 footer {
-    display: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
     color: #ffffff;
     background-color: #000000;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 footer a {
@@ -277,13 +287,16 @@ footer a {
 }
 
 footer .contacts {
-    padding-left: 20%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-end;
 }
 
-footer .copyright {
-    padding-left: 20%;
-}
-
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* --------------------  Phone adaptation -------------------- */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
 
 @media (max-width: 480px) {
 
@@ -298,11 +311,16 @@ footer .copyright {
 
     body nav .onglets a {
         font-size: 0.8rem;
-        margin-right: 1.3rem;
+        margin-right: 1rem;
     }
 
     body nav .onglets {
         font-size: 0.8rem;
+    }
+
+    body nav .onglets img{
+        width: 0.8rem;
+        margin-left: 0.5rem;
     }
 
 /* ------------------------------------------------------------- */
@@ -310,8 +328,8 @@ footer .copyright {
 /* ------------------------------------------------------------- */
 
     body .header {
-        min-height: 90vh;
-        max-height: 90vh;
+        min-height: 86vh;
+        max-height: 86vh;
     }
 
     body .logo {
@@ -343,23 +361,53 @@ footer .copyright {
 /* --------------------  Main : Card dishes -------------------- */
 /* ------------------------------------------------------------- */
 
+    body main {
+        height: 80vh;
+    }
     body main .card {
-        margin-top: -12rem;
+        margin-top: -3rem;
         width: 90%;
         height: auto;
     }
 
-    /* body main .card { /////with arrow
+    body main .cardFull {
+        display: none; /* Hidden by default */
+        position: absolute; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 5rem; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    body main .cardFull .cardFullImg {
         margin-top: 2rem;
-        width: 90%;
-        height: auto;
-    } */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 95%;
+        max-width: 95%;
+    }
 
-
-    body main .arrowIMG {
-        display: none;
-        margin-top: auto;
-        width: 1.5rem;
+    body main .cardFull .close {
+        position: absolute;
+        top: 4.4rem;
+        right: 1rem;
+        color: #f1f1f1;
+        font-size: 3rem;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+      
+    body main .cardFull .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
     }
 
 /* ------------------------------------------------------------- */
@@ -367,13 +415,20 @@ footer .copyright {
 /* ------------------------------------------------------------- */
 
     footer {
-        display: flex;
-        margin-top: -6rem;
-        padding-left: 1rem;
+        margin-top: 3rem;
+        flex-direction: column; /* Stack footer sections vertically on mobile */
+        align-items: center; /* Center align all footer sections */
+        text-align: center; /* Center text for all sections */
     }
 
-    footer .contacts,
-    footer .copyright {
-        padding-left: 0;
+    footer .contacts {
+        cursor: pointer;
+        padding-right: 0; /* Remove right padding on mobile */
+        padding-top: 1rem; /* Add top padding for spacing */
+        align-items: center; /* Center align contacts on mobile */
+    }
+
+    footer .contacts div {
+        text-align: center; /* Center align each contact detail on mobile */
     }
 }

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Le Castell</title>
         <link rel="stylesheet" href="./styles/style_index.css">
+        <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
         <script src="./animations.js"></script>
     </head>
     <body>
@@ -16,16 +17,17 @@
                 <div class="onglets">
                     <a href="./history.html">Histoire</a>
                     <div class="menu">
-                        <a href="./menu_card.html">Menus</a>
+                        <a href="./menu.html">Menus<img class="arrowMenuIMG" src="./resources/arrow_down.png" alt="flèche menu"></a>
                         <ul class="submenu">
-                            <a href="./fr/dishes.html"><li>Plats</li></a>
-                            <a href="./fr/deserts.html"><li>Desserts</li></a>
-                            <a href="./fr/drinks.html"><li>Boissons</li></a>
+                            <a href="#suggestions"><li>Suggestions</li></a>
                             <a href="./fr/cocktails.html"><li>Cocktails</li></a>
                             <a href="./fr/wines.html"><li>Vins</li></a>
+                            <a href="./fr/drinks.html"><li>Boissons</li></a>
+                            <a href="./fr/dishes.html"><li>Plats</li></a>
+                            <a href="./fr/desserts.html"><li>Desserts</li></a>
                         </ul>
                     </div>
-                    <a href="./index.html" class="">Accueil</a>
+                    <a href="./index.html">Accueil</a>
                     <a href="./photos.html">Photos</a>
                     <a href="./contact.html">Contact</a>
                 </div>
@@ -35,7 +37,7 @@
             </div>
         </div>
         <main>
-            <div class="weekly_recommendation">
+            <div class="suggestions" id="suggestions">
                 <h1>Suggestion du moment</h1>
                 <div class="dish">
                     <div class="dish_image">
@@ -45,8 +47,6 @@
                         <h4>Exemple</h4>
                     </div>
                 </div>
-            </div>
-            <div class="reviews-container">
             </div>
             <div class="photos">
                 <div class="images">
@@ -71,11 +71,8 @@
                 <div class="CGU"><a href="./cgu.html#CGU">Conditions Générales d'Utilisation</a></div>
             </div>
             <div class="contacts">
-                <div class="phone_number">04.68.80.72.08</div>
-                <div class="adresse">13 Rue de la Tour Carrée, 66140, Canet-en-Roussillon, France</div>
-            </div>
-            <div class="copyright">
-                <p>Le Castell Canet</p>
+                <div class="phone_number"><a href="tel:+33468807208">04.68.80.72.08</a></div>
+                <div class="adresse"><a href="https://maps.app.goo.gl/6fJ1VZLow1axiyhf6" target="_blank">13 Rue de la Tour Carrée, 66140, Canet-en-Roussillon, France</a></div>
             </div>
         </footer>
     </body>

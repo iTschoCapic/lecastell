@@ -22,7 +22,7 @@ h1 {
 
 body nav{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     display: grid;
     left: 50%;
     transform: translateX(-50%);
@@ -48,6 +48,20 @@ body nav .onglets :hover{
     border-bottom: 0.2rem solid #ffffff;
 }
 
+body nav .onglets img{
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+body nav .onglets img:hover{
+    width: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10rem;
+}
+
 body nav .onglets a {
     font-size: 1rem;
     font-weight: bold;
@@ -62,6 +76,7 @@ body nav .onglets .menu:hover {
 
 body nav .onglets .menu:hover .submenu {
     display: block; /* Show submenu on hover */
+    padding-bottom: 1.3rem;
 }
 
 body nav .onglets .menu .submenu {
@@ -71,24 +86,24 @@ body nav .onglets .menu .submenu {
     list-style: none;
     z-index: 1; /* Ensure it appears above other content */
     width: max-content;
+    padding-top: 1rem;
     background-color: rgba(58, 57, 57, 0.60);
 }
 
 body nav .onglets .menu .submenu:hover {
     border-bottom: none;
-    padding-bottom: none;
-}
-
-body nav .onglets .menu .submenu li {
-    margin: 0;
 }
 
 body nav .onglets .menu .submenu a {
     display: block;
-    left: auto;
-    padding: 0.5rem 0rem;
-    color: #ffffff;
-    white-space: nowrap; /* Prevent text from wrapping */
+    border-bottom: none;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.1rem;
+}
+
+body nav .onglets .menu .submenu li {
+    margin: 0;
+    padding: 0;
 }
 
 /* ------------------------------------------------------------- */
@@ -113,15 +128,17 @@ body .header {
 
 body .logo{
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: left;
-    align-items: left;
-    height: 10rem;
+    height: 8rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 50%;
 }
 
 body .logo a {
-    width: 9rem;
+    width: 8rem;
     transition: ease 0.3s;
 }
 
@@ -131,8 +148,6 @@ body .logo a:hover{
 }
 
 body .logo a img{
-    margin-top: 2rem;
-    margin-left: 2rem;
     max-width: 100%;
     max-height: 100%;
     width: 8rem;
@@ -176,12 +191,13 @@ body main #CGU p {
 /* ------------------------------------------------------------- */
 
 footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    color: #ffffff;
     display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #ffffff;
     background-color: #000000;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 footer a {
@@ -191,9 +207,112 @@ footer a {
 }
 
 footer .contacts {
-    padding-left: 20%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-end;
 }
 
-footer .copyright {
-    padding-left: 20%;
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* --------------------  Phone adaptation -------------------- */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+@media (max-width: 480px) {
+
+    /* ------------------------------------------------------------ */
+    /* ---------------------  Navigation Menu --------------------- */
+    /* ------------------------------------------------------------ */
+    
+    body nav {
+        flex-direction: column;
+        padding-left: 4rem;
+    }
+
+    body nav .onglets a {
+        font-size: 0.8rem;
+        margin-right: 1rem;
+    }
+
+    body nav .onglets {
+        font-size: 0.8rem;
+    }
+
+    body nav .onglets img{
+        width: 0.8rem;
+        margin-left: 0.5rem;
+    }
+    
+    /* ------------------------------------------------------------- */
+    /* --------------  Image : Logo, Background color -------------- */
+    /* ------------------------------------------------------------- */
+    
+    body .header {
+        min-height: 95vh;
+        max-height: 95vh;
+    }
+
+    body .logo {
+        margin-top: 0.6rem;
+        margin-left: 0.5rem;
+    }
+
+    body .logo a {
+        width: 3rem;
+    }
+
+    body .logo a img {
+        width: 3rem;
+    }
+
+    body .text-header {
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30rem;
+        padding-top: 10rem;
+    }
+
+    /* ------------------------------------------------------------- */
+    /* ---------------------------  Main --------------------------- */
+    /* ------------------------------------------------------------- */
+    
+    body main #CGU h1 {
+        margin-left: 5%;
+        font-size: 1.2rem;
+    }
+
+    body main #CGU h2 {
+        margin-left: 7%;
+        font-size: 1rem;
+    }
+
+    body main #CGU p {
+        margin-left: 10%;
+        font-size: 0.9rem;
+        margin-right: 1rem;
+        text-align: justify;
+    }
+    
+
+    /* ------------------------------------------------------------- */
+    /* -------------  Footer : Legal Notices, Contacts ------------- */
+    /* ------------------------------------------------------------- */
+    
+    footer {
+        flex-direction: column; /* Stack footer sections vertically on mobile */
+        align-items: center; /* Center align all footer sections */
+        text-align: center; /* Center text for all sections */
+    }
+
+    footer .contacts {
+        padding-right: 0; /* Remove right padding on mobile */
+        padding-top: 1rem; /* Add top padding for spacing */
+        align-items: center; /* Center align contacts on mobile */
+    }
+
+    footer .contacts div {
+        text-align: center; /* Center align each contact detail on mobile */
+    }
 }
