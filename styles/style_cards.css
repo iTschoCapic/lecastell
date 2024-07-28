@@ -323,6 +323,10 @@ footer .contacts {
         margin-left: 0.5rem;
     }
 
+    body nav .onglets .menu:focus-within .submenu {
+        display: block;
+    }
+
 /* ------------------------------------------------------------- */
 /* --------------  Image : Logo, Background color -------------- */
 /* ------------------------------------------------------------- */
@@ -339,6 +343,8 @@ footer .contacts {
 
     body .logo a {
         width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
     }
 
     body .logo a img {
@@ -365,9 +371,11 @@ footer .contacts {
         height: 80vh;
     }
     body main .card {
-        margin-top: -3rem;
+        padding-top: 0rem;
+        margin-top: 3rem;
         width: 90%;
         height: auto;
+        background-color: #000000;
     }
 
     body main .cardFull {
@@ -385,7 +393,7 @@ footer .contacts {
     }
 
     body main .cardFull .cardFullImg {
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -395,7 +403,7 @@ footer .contacts {
 
     body main .cardFull .close {
         position: absolute;
-        top: 4.4rem;
+        top: 4rem;
         right: 1rem;
         color: #f1f1f1;
         font-size: 3rem;
