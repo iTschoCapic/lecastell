@@ -5,14 +5,14 @@ var SubLanguage = false;
 /* ------------------- Animation Text-Header ------------------- */
 /* ------------------------------------------------------------- */
 
-window.onload = function () {
-    console.log('index');
-    if (window.location.pathname == '/'){
-        var textH = document.getElementById('text-header');
-        textH.style.animation = 'slideInTextHeader 0.5s forwards';
-        console.log('index2');
-    }
-}
+// window.onload = function () {
+//     console.log('index');
+//     if (window.location.pathname == '/' || window.location.pathname == '/index.html'){
+//         var textH = document.getElementById('text-header');
+//         textH.style.animation = 'slideInTextHeader 0.5s forwards';
+//         console.log('index2');
+//     }
+// }
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -47,6 +47,11 @@ function toggleMenuLanguage() {
 /* ------------------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', function () {
+    console.log(verifierPathname(window.location.pathname));
+    if (!verifierPathname(window.location.pathname)){
+        return;
+    }
+    console.log("passé");
     var card = document.getElementById('card');
     var modal = document.getElementById('cardFull');
     card.addEventListener('click', function (event) {
@@ -62,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* ------------------------------------------------------------- */
-/* ----------------- General Rule for closing ----------------- */
+/* ----------------------- General Rules ----------------------- */
 /* ------------------------------------------------------------- */
 
 window.onclick = function(event){
@@ -75,4 +80,9 @@ window.onclick = function(event){
             document.getElementById('cardFull').style.display = 'none';
         }
     }
+}
+
+function verifierPathname(pathname) { // Only works on server not on local repo
+    const motif = /^\/(fr|ca|de|en|es)(\/.*)?$/;
+    return motif.test(pathname);
 }

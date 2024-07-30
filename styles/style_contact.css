@@ -48,18 +48,18 @@ body nav .onglets :hover{
     border-bottom: 0.2rem solid #ffffff;
 }
 
-body nav .onglets img{
+body nav .onglets img {
     width: 1rem;
     margin-left: 1rem;
+    margin-bottom: -0.2rem;
 }
 
-body nav .onglets img:hover{
+body nav .onglets img:hover {
     width: 1rem;
-    margin-left: 1rem;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
-    margin-right: 10rem;
+    border-bottom: none;
 }
 
 body nav .onglets a {
@@ -116,15 +116,20 @@ body{
 }
 
 body .header {
-    position: relative;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('../resources/interior_image.jpg');
-    background-position: center 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('../resources/restaurant/interior_image.jpg');
+    background-position: center 20%;
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-size: cover; /* Resize the background image to cover the entire background */
     color: #ffffff;
-    min-height: 50rem;
-    max-height: 50rem;
+    min-height: 100vh;
+    max-height: 100vh;
 }
+
+/* ---------------------------  Logo --------------------------- */
 
 body .logo{
     position: fixed;
@@ -140,6 +145,7 @@ body .logo{
 body .logo a {
     width: 8rem;
     transition: ease 0.3s;
+    border-radius: 50%;
 }
 
 body .logo a:hover{
@@ -162,7 +168,7 @@ body .text-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50rem;
+    height: 20rem;
 }
 
 body .text-header img {
@@ -174,13 +180,24 @@ body .text-header img {
 /* ---------------------------  Main --------------------------- */
 /* ------------------------------------------------------------- */
 
+body main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: This ensures the main element takes the full viewport height */
+    z-index: 1;
+}
+
 body main .contact-box {
-    border: 0.2rem solid #ccc;
+    margin-top: 6rem;
     padding: 0.5rem;
-    margin: 1rem auto;
-    max-width: 100vh;
+    max-height: 80%;
+    width: 50rem;
     text-align: center;
     background-color: #f9f9f9;
+    border: 0.2rem solid #ccc;
 }
 
 body main a {
@@ -253,7 +270,7 @@ footer .contacts {
     }
 
     body nav .onglets img{
-        width: 0.8rem;
+        width: 1rem;
         margin-left: 0.5rem;
     }
 
@@ -266,8 +283,8 @@ footer .contacts {
     /* ------------------------------------------------------------- */
     
     body .header {
-        min-height: 95vh;
-        max-height: 95vh;
+        min-height: 86vh;
+        max-height: 86vh;
     }
 
     body .logo {
@@ -286,19 +303,20 @@ footer .contacts {
     }
 
     body .text-header {
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30rem;
-        padding-top: 10rem;
+        display: none;
     }
 
     /* ------------------------------------------------------------- */
     /* ---------------------------  Main --------------------------- */
     /* ------------------------------------------------------------- */
 
-    
+    body main {
+        height: 85vh;
+    }
+    body main .contact-box {
+        margin-top: 5rem;
+        width: 90%;
+    }
 
     /* ------------------------------------------------------------- */
     /* -------------  Footer : Legal Notices, Contacts ------------- */

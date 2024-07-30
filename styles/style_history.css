@@ -172,28 +172,23 @@ body .text-header img {
 }
 
 /* ------------------------------------------------------------- */
-/* ---------------------------  Main --------------------------- */
+/* ---------------------  Main : CGU, CGV --------------------- */
 /* ------------------------------------------------------------- */
 
-body main .cartes .cocktails .images-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1rem;
-    padding: 2rem;
-    background-color: #000000;
-    border-bottom: 0.1rem solid #ddd;
+body main .intro {
+    margin-left: 1%;
+    font-size: 1.3rem;
 }
 
-body main .cartes .cocktails .images-container img {
-    width: 100%;
-    height: auto;
+body main h2 {
+    margin-left: 2%;
+    
 }
 
-body main .cartes .cocktails .classic .container {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 0.1rem solid #ddd;
-    padding: 1rem 1rem;
+body main p {
+    margin-left: 3%;
+    text-align: justify;
+    padding-right: 1%;
 }
 
 /* ------------------------------------------------------------- */
@@ -294,7 +289,21 @@ footer .contacts {
     /* ---------------------------  Main --------------------------- */
     /* ------------------------------------------------------------- */
     
+    body main .intro {
+        margin-left: 5%;
+        font-size: 1rem;
+    }
 
+    body main h2 {
+        margin-left: 7%;
+        font-size: 1rem;
+    }
+
+    body main p {
+        margin-left: 10%;
+        font-size: 0.9rem;
+        margin-right: 1rem;
+    }
     
 
     /* ------------------------------------------------------------- */

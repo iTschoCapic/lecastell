@@ -48,18 +48,18 @@ body nav .onglets :hover{
     border-bottom: 0.2rem solid #ffffff;
 }
 
-body nav .onglets img{
+body nav .onglets img {
     width: 1rem;
     margin-left: 1rem;
+    margin-bottom: -0.2rem;
 }
 
-body nav .onglets img:hover{
+body nav .onglets img:hover {
     width: 1rem;
-    margin-left: 1rem;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
-    margin-right: 10rem;
+    border-bottom: none;
 }
 
 body nav .onglets a {
@@ -117,7 +117,7 @@ body{
 
 body .header {
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('../resources/interior_image.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('../resources/restaurant/interior_image.jpg');
     background-position: center 40%;
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-size: cover; /* Resize the background image to cover the entire background */
@@ -140,6 +140,7 @@ body .logo{
 body .logo a {
     width: 8rem;
     transition: ease 0.3s;
+    border-radius: 50%;
 }
 
 body .logo a:hover{
@@ -184,6 +185,8 @@ body main #CGU h2 {
 
 body main #CGU p {
     margin-left: 3%;
+    text-align: justify;
+    padding-right: 1%;
 }
 
 /* ------------------------------------------------------------- */
@@ -239,7 +242,7 @@ footer .contacts {
     }
 
     body nav .onglets img{
-        width: 0.8rem;
+        width: 1rem;
         margin-left: 0.5rem;
     }
 
@@ -298,7 +301,6 @@ footer .contacts {
         margin-left: 10%;
         font-size: 0.9rem;
         margin-right: 1rem;
-        text-align: justify;
     }
     
 
