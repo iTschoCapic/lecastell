@@ -47,11 +47,9 @@ function toggleMenuLanguage() {
 /* ------------------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', function () {
-    console.log(verifierPathname(window.location.pathname));
     if (!verifierPathname(window.location.pathname)){
         return;
     }
-    console.log("passé");
     var card = document.getElementById('card');
     var modal = document.getElementById('cardFull');
     card.addEventListener('click', function (event) {

@@ -175,7 +175,50 @@ body .text-header img {
 /* ---------------------------  Main --------------------------- */
 /* ------------------------------------------------------------- */
 
-body main .cartes .cocktails .images-container {
+body main .cartes h1 {
+    margin-left: 1%;
+}
+
+body main .cartes h2 {
+    border-top: 0.2rem solid #ddd;
+    padding-left: 2%;
+    padding-top: 1rem;
+    border-top: none;
+}
+body main .cartes h3 {
+    padding-left: 2.5%;
+    font-weight: normal;
+}
+
+body main .cartes .bio {
+    color: green;
+}
+
+body main .cartes .container {
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 0.1rem solid #ddd;
+    padding-left: 3%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+}
+
+body main .cartes .container:last-child {
+    border-bottom: none;
+}
+
+body main .cartes .container2 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+
+body main .cartes .images-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
@@ -184,16 +227,21 @@ body main .cartes .cocktails .images-container {
     border-bottom: 0.1rem solid #ddd;
 }
 
-body main .cartes .cocktails .images-container img {
+body main .cartes .images-container img {
     width: 100%;
     height: auto;
 }
 
-body main .cartes .cocktails .classic .container {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 0.1rem solid #ddd;
-    padding: 1rem 1rem;
+body main .cartes .images-containers img{
+    width: 3rem;
+}
+
+body main .cartes .plats .sauce .container {
+    font-weight: bold;
+}
+
+body main .cartes .plats .sauce .container:last-child {
+    font-weight: normal;
 }
 
 /* ------------------------------------------------------------- */

@@ -182,14 +182,39 @@ body main .intro {
 
 body main h2 {
     margin-left: 2%;
-    
 }
 
-body main p {
+main .container {
     margin-left: 3%;
-    text-align: justify;
+    display: flex;
+    align-items: flex-start;
     padding-right: 1%;
 }
+
+main .container.reverse {
+    flex-direction: row-reverse;
+}
+
+body main .container p {
+    text-align: justify;
+    flex: 1;
+}
+
+body main .container .images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+body main .container .images-container img {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+
 
 /* ------------------------------------------------------------- */
 /* -------------  Footer : Legal Notices, Contacts ------------- */
@@ -257,8 +282,8 @@ footer .contacts {
     /* ------------------------------------------------------------- */
     
     body .header {
-        min-height: 95vh;
-        max-height: 95vh;
+        min-height: 40vh;
+        max-height: 40vh;
     }
 
     body .logo {
@@ -282,7 +307,7 @@ footer .contacts {
         justify-content: center;
         align-items: center;
         height: 30rem;
-        padding-top: 10rem;
+        padding-top: 0rem;
     }
 
     /* ------------------------------------------------------------- */
@@ -299,12 +324,15 @@ footer .contacts {
         font-size: 1rem;
     }
 
-    body main p {
-        margin-left: 10%;
+    body main .container p {
         font-size: 0.9rem;
+    }
+
+    main .container {
+        display: block;
+        margin-left: 10%;
         margin-right: 1rem;
     }
-    
 
     /* ------------------------------------------------------------- */
     /* -------------  Footer : Legal Notices, Contacts ------------- */
