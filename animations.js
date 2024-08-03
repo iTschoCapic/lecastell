@@ -5,29 +5,36 @@ var SubLanguage = false;
 /* ------------------- Animation Text-Header ------------------- */
 /* ------------------------------------------------------------- */
 
-// window.onload = function () {
-//     console.log('index');
-//     if (window.location.pathname == '/' || window.location.pathname == '/index.html'){
-//         var textH = document.getElementById('text-header');
-//         textH.style.animation = 'slideInTextHeader 0.5s forwards';
-//         console.log('index2');
-//     }
-// }
-
 document.addEventListener('DOMContentLoaded', (event) => {
     if (location.pathname != '/' && location.pathname != '/index.html'){
         return;
     }
+
+    var textH = document.getElementById('text-header');
+    textH.style.animation = 'slideInTextHeader 0.5s forwards';
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    const elements = document.querySelectorAll('.cartes div');
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
     const header = document.querySelector('.header');
     const images = [
         "./resources/restaurant/interior_image.jpg",
         "./resources/restaurant/interior_exterior.jpg"
     ];
     let currentIndex = 0;
-    
-    var textH = document.getElementById('text-header');
-    textH.style.animation = 'slideInTextHeader 0.5s forwards';
-
     setInterval(() => {
         header.style.opacity = 0;
         setTimeout(() => {

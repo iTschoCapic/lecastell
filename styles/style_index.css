@@ -197,6 +197,17 @@ body .text-header img {
 /* ---------------------  Main : Card dish --------------------- */
 /* ------------------------------------------------------------- */
 
+body main .cartes div {
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+body main .cartes div.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body main .cartes h1 {
     margin-left: 1%;
 }
