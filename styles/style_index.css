@@ -124,6 +124,17 @@ body .header {
     color: #ffffff;
     min-height: 50rem;
     max-height: 50rem;
+    transition: opacity 0.7s ease-in-out;
+    opacity: 1;
+}
+
+body .header .text-header p {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    top: 32rem;
+    font-size: 1.5rem;
 }
 
 body .logo{
@@ -174,11 +185,11 @@ body .text-header img {
 @keyframes slideInTextHeader {
     from {
         opacity: 0;
-        transform: translateX(20px);
+        transform: translateY(10rem);
     }
     to {
-        opacity: 0.7;
-        transform: translateX(0);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -208,6 +219,7 @@ body main .cartes .bio {
 body main .cartes .container {
     display: flex;
     justify-content:space-between;
+    align-items: center;
     border-bottom: 0.1rem solid #ddd;
     padding-left: 3%;
     padding-top: 1rem;
@@ -222,11 +234,22 @@ body main .cartes .container:last-child {
 body main .cartes .container2 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 3%;
     padding-top: 1rem;
     margin-bottom: -2rem;
     padding-right: 2rem;
     font-weight: bold;
+}
+
+body main .cartes .container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+    padding-right: 2rem;
 }
 
 body main .cartes .images-container {
@@ -240,11 +263,41 @@ body main .cartes .images-container {
 
 body main .cartes .images-container img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+body main .cartes .cocktails .images-container .c1 {
+    object-position: center 10%;
+}
+
+body main .cartes .cocktails .images-container .c2 {
+    object-position: center 35%;
+}
+
+body main .cartes .cocktails .images-container .c3 {
+    object-position: center 20%;
+}
+
+body main .cartes .cocktails .images-container .c4 {
+    object-position: center 30%;
+}
+
+/* body main .cartes .cocktails .images-container .c5, .c6, .c9, .c10, .c12, .c13 {
+    object-position: center 50%;
+} */
+
+body main .cartes .cocktails .images-container .c7 {
+    object-position: center 30%;
+}
+
+body main .cartes .cocktails .images-container .c8 {
+    object-position: center 30%;
 }
 
 body main .cartes .images-containers img{
-    width: 3rem;
+    width: 2.5rem;
 }
 
 body main .cartes .plats .sauce .container {
@@ -253,6 +306,17 @@ body main .cartes .plats .sauce .container {
 
 body main .cartes .plats .sauce .container:last-child {
     font-weight: normal;
+}
+
+@keyframes slideInCategories {
+    from {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ------------------------------------------------------------- */
@@ -393,6 +457,11 @@ footer .contacts {
         padding-top: 10rem;
     }
 
+    body .header .text-header p {
+        inline-size: 60%;
+        text-align: center;
+    }
+
     /* ------------------------------------------------------------- */
     /* ---------------------------  Main --------------------------- */
     /* ------------------------------------------------------------- */
@@ -403,6 +472,9 @@ footer .contacts {
         padding: 0.5rem;
     }
     
+    body main .cartes .images-containers img{
+        width: 2rem;
+    }
 
     /* ------------------------------------------------------------- */
     /* -------------  Footer : Legal Notices, Contacts ------------- */

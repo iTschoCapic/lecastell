@@ -14,6 +14,30 @@ var SubLanguage = false;
 //     }
 // }
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (location.pathname != '/' && location.pathname != '/index.html'){
+        return;
+    }
+    const header = document.querySelector('.header');
+    const images = [
+        "./resources/restaurant/interior_image.jpg",
+        "./resources/restaurant/interior_exterior.jpg"
+    ];
+    let currentIndex = 0;
+    
+    var textH = document.getElementById('text-header');
+    textH.style.animation = 'slideInTextHeader 0.5s forwards';
+
+    setInterval(() => {
+        header.style.opacity = 0;
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            header.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url(${images[currentIndex]})`;
+            header.style.opacity = 1;
+        }, 500); // Match this time with the CSS transition duration
+    }, 10000);
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuLink = document.getElementById('menu_link');

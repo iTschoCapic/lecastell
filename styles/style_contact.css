@@ -191,7 +191,7 @@ body main {
 }
 
 body main .contact-box {
-    margin-top: 6rem;
+    margin-top: 10rem;
     padding: 0.5rem;
     max-height: 80%;
     width: 50rem;
@@ -205,9 +205,19 @@ body main a {
     color: #000000;
 }
 
-body main  .contact-box .phone_number,
+body main .contact-box .phone_number,
 .contact-box .adresse {
     margin: 1rem 0rem;
+}
+
+body main .contact-box .socials {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+body main .contact-box img {
+    width: 3rem;
 }
 
 body main .contact-box iframe {

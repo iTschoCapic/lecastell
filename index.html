@@ -9,7 +9,7 @@
         <script src="./animations.js"></script>
     </head>
     <body>
-        <div class="header">
+        <div class="header" id="header">
             <div class="logo">
                 <a href="./index.html"><img src="./resources/LeCastell_logo_png_noir.png" alt="Le Castell logo"></a>
             </div>
@@ -19,7 +19,7 @@
                     <div class="menu">
                         <a href="./index.html#cartes" id="menu_link">Menus<img class="arrowMenuIMG" src="./resources/arrow_down.png" alt="flèche menu"></a>
                         <ul class="submenu" id="submenu">
-                            <a href="./index#suggestions"><li>Suggestions</li></a>
+                            <a href="./suggestions.html"><li>Suggestions</li></a>
                             <a href="./fr/cocktails.html"><li>Cocktails</li></a>
                             <a href="./fr/wines.html"><li>Vins</li></a>
                             <a href="./fr/drinks.html"><li>Boissons</li></a>
@@ -34,7 +34,9 @@
             </nav>
             <div class="text-header" id="text-header">
                 <img src="./resources/LeCastell_typo_blanche.png" alt="Le Castell logo">
+                <p>Ouvert tous les soirs à partir de 19h30</p>
             </div>
+            
         </div>
         <main>
             <div class="cartes" id="cartes">
@@ -43,19 +45,23 @@
                 <!-- -------------------------------------------- -->
                 <div class="cocktails">
                     <div class="images-container">
-                        <img src="./resources/food/frites.jpg" alt="photos cocktails">
-                        <img src="./resources/food/salade.jpg" alt="photos cocktails">
-                        <img src="./resources/food/PXL_20240715_180902437.MP.jpg" alt="photos cocktails">
-                        <img src="./resources/food/PXL_20240715_180917558.MP.jpg" alt="photos cocktails">
-                        <img src="./resources/food/PXL_20240715_184853808.MP.jpg" alt="photos cocktails">
-                        <img src="./resources/food/salade.jpg" alt="photos cocktails">
-                        <img src="./resources/food/frites.jpg" alt="photos cocktails">
-                        <img src="./resources/food/salade.jpg" alt="photos cocktails">
+                        <img src="./resources/food/cocktails/1.jpg" alt="photos cocktails" class="c1">
+                        <img src="./resources/food/cocktails/4.jpg" alt="photos cocktails" class="c4">
+                        <img src="./resources/food/cocktails/2.jpg" alt="photos cocktails" class="c2">
+                        <img src="./resources/food/cocktails/3.jpg" alt="photos cocktails" class="c3">
+                        <img src="./resources/food/cocktails/5.jpg" alt="photos cocktails" class="c5">
+                        <img src="./resources/food/cocktails/7.jpg" alt="photos cocktails" class="c7">
+                        <img src="./resources/food/cocktails/8.jpg" alt="photos cocktails" class="c8">
+                        <img src="./resources/food/cocktails/9.jpg" alt="photos cocktails" class="c9">
+                        <img src="./resources/food/cocktails/10.jpg" alt="photos cocktails" class="c10">
+                        <img src="./resources/food/cocktails/6.jpg" alt="photos cocktails" class="c6">
+                        <img src="./resources/food/cocktails/12.jpg" alt="photos cocktails" class="c12">
+                        <img src="./resources/food/cocktails/13.jpg" alt="photos cocktails" class="c13">
                     </div>
                     <h1>Les Cocktails</h1>
                     <div class="classique">
                         <h2>Les Classiques</h2>
-                        <div class="container">
+                        <div class="container2">
                             <p>Mojito</p>
                             <div class="images-containers">
                                 <img src="./resources/allergies/cacahuete.png" alt="Allergie à l'arachide">
@@ -76,85 +82,151 @@
                             <p>9,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Rhum Ambré, Menthe, Sucre de Canne, Citron Vert</p>
+                        </div>
+                        <div class="container2">
                             <p>Daiquiri</p>
                             <p>9,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Rhum Blanc, Sucre de Canne, Citron Vert</p>
+                        </div>
+                        <div class="container2">
                             <p>Piña Colada</p>
                             <p>9,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Rhum Blanc, Rhum Ambré, Ananas, coco</p>
+                        </div>
+                        <div class="container2">
                             <p>Old Fashioned</p>
                             <p>9,50 €</p>
                         </div>
                         <div class="container">
+                            <p>Whisky, Orange, Perrier</p>
+                        </div>
+                        <div class="container2">
                             <p>Sex on the Beach</p>
                             <p>9,50 €</p>
-                        </div><div class="container">
+                        </div>
+                        <div class="container">
+                            <p>Vodka, Pêche, Ananas, Cranberry</p>
+                        </div>
+                        <div class="container2">
                             <p>Margarita</p>
                             <p>10,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Tequila, Cointreau, Citron Vert</p>
+                        </div>
+                        <div class="container2">
                             <p>Cosmopolitan</p>
                             <p>10,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Vodka, Cointreau, Cranberry, Citron Vert</p>
+                        </div>
+                        <div class="container2">
                             <p>Long Island</p>
                             <p>12,00 €</p>
+                        </div>
+                        <div class="container">
+                            <p>Vodka, Gin, Rhum, Cointreau, Tequila, Citron, Cola</p>
                         </div>
                     </div>
                     <div class="signature">
                         <h2>Cocktails Signature</h2>
-                        <div class="container">
+                        <div class="container2">
                             <p>Spritz du Castell</p>
                             <p>7,50 €</p>
                         </div>
                         <div class="container">
+                            <p>Crème de Mandarine, Triple Blanc Pétillant LAFAGE, Perrier</p>
+                        </div>
+                        <div class="container2">
                             <p>Poma Rosa</p>
                             <p>8,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Gin, Liqueur de litchi, Pamplemousse, Jus de Pomme</p>
+                        </div>
+                        <div class="container2">
                             <p>Punch</p>
                             <p>8,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Rhum Blanc, Ananas, Goyave, Mangue, Maracuja</p>
+                        </div>
+                        <div class="container2">
                             <p>Espresso Martini</p>
                             <p>9,50 €</p>
                         </div>
                         <div class="container">
+                            <p>Liqueur de Café, Vodka, Sucre de Canne, Café</p>
+                        </div>
+                        <div class="container2">
                             <p>Pornstar Martini</p>
                             <p>10,50 €</p>
                         </div>
                         <div class="container">
+                            <p>Vodka, Vanille, Maracuja, Shot de Champagne</p>
+                        </div>
+                        <div class="container2">
                             <p>Spritz St Germain</p>
                             <p>11,00 €</p>
                         </div>
+                        <div class="container">
+                            <p>Liqueur St Germain, Blanc Pétillant, Perrier</p>
+                        </div>
                     </div>
                     <div class="sans-alcool">
-                        <h2>Cocktails Sans Alcool</h2>
-                        <div class="container">
+                        <h2>Mocktails</h2>
+                        <div class="container2">
                             <p>Exòtic</p>
                             <p>7,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Banane Verte, Goyave, Mangue, Maracuja</p>
+                        </div>
+                        <div class="container2">
                             <p>Pinya Rosa</p>
                             <p>7,00 €</p>
                         </div>
                         <div class="container">
+                            <p>Ananas, Citron, Framboise</p>
+                        </div>
+                        <div class="container2">
                             <p>Virgin Mojito</p>
                             <p>7,50 €</p>
                         </div>
                         <div class="container">
+                            <p>Menthe, Citron Vert, Limonade</p>
+                        </div>
+                        <div class="container2">
                             <p>Virgin Piña Colada</p>
                             <p>7,50 €</p>
                         </div>
+                        <div class="container">
+                            <p>Ananas, Coco</p>
+                        </div>
                     </div>
                     <div class="highballs">
-                        <h2>Les Highballs</h2>
-                        <div class="container">
-                            <p>Alcool (4cl) + Soft</p>
-                            <p>5,00 € + 3,50 € = 8,50 €</p>
+                        <h2>Les Highballs 8,50 €</h2>
+                        <div class="container2">
+                            <p>Alcool (4cl)</p>
+                            <p>5,00 €</p>
                         </div>
+                        <div class="container">
+                            <p>Get27, Gin, Jägermeister, Rhum, Tequila, Vodka, Whisky</p>
+                        </div>
+                        <div class="container2">
+                            <p>Soft</p>
+                            <p>3,50 €</p>
+                        </div>
+                        <div class="container">
+                            <p>Ananas, Coca, Orange, Perrier, Pomme, Redbull, Tonic</p>
+                        </div>
+
                     </div>
                     <div class="shooters">
                         <h2>Les Shooters (2cl)</h2>
@@ -203,174 +275,243 @@
                         <h2>Vins Rosés (75cl)</h2>
                         <div class="container2">
                             <p>Château des Hospices - NOVA ONA</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>18,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes <i>(1,5l)</i></p>
-                            <p>40,00 €</p>
+                            <p>IGP Côtes Catalanes, 13°</p>
+                            <p><i>(1,5l)</i> 40,00 €</p>
                         </div>
                         <div class="container2">
                             <p>Château des Hospices - GAÏA</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>22,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Côtes du Roussillon</p>
+                            <p>AOP Côtes du Roussillon, 13,5°</p>
                         </div>
                         <div class="container2">
                             <p>Domaine Lafage - NEREDA <span class="bio">BIO</span></p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>25,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 13°</p>
                         </div>
                         <div class="container2">
                             <p>Château de Rey - SISQUÒ <span class="bio">BIO</span></p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>25,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Côtes du Roussillon</p>
+                            <p>AOP Côtes du Roussillon, 13°</p>
                         </div>
                         <div class="container2">
                             <p>Domaine Lafage - MIRAFLORS</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>26,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes <i>(50cl)</i></p>
-                            <p>19,00 €</p>
+                            <p>IGP Côtes Catalanes, 12,5°</p>
+                            <p><i>(50cl)</i> 19,00 €</p>
                         </div>
                         <div class="container2">
                             <p>Mas Baux - ROUGE À LÈVRES <span class="bio">BIO</span></p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>27,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 13,7°</p>
                         </div>
                         <div class="container2">
                             <p>Domaine Lafage - GALLICA</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>29,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 13°</p>
                         </div>
                         <div class="container2">
                             <p>Cazes - CLOS DE PAULILLES</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>31,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Collioure</p>
+                            <p>AOP Collioure, 13°</p>
                         </div>
                     </div>
                     <div class="blancs">
                         <h2>Vins Blancs (75cl)</h2>
                         <div class="container2">
                             <p>Château des Hospices - NOVA ONA</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>18,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 13°</p>
                         </div>
                         <div class="container2">
                             <p>Domaine Lafage - NEREDA <span class="bio">BIO</span></p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>25,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 12,5°</p>
                         </div>
                         <div class="container2">
                             <p>Château de Rey - SISQUÒ <span class="bio">BIO</span></p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>25,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Côtes du Roussillon</p>
+                            <p>AOP Côtes du Roussillon, 12,5°</p>
                         </div>
                         <div class="container2">
                             <p>Domaine Lafage - CENTENAIRE</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>26,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes <i>(50cl)</i></p>
-                            <p>19,00 €</p>
+                            <p>IGP Côtes Catalanes, 13°</p>
+                            <p><i>(50cl)</i> 19,00 €</p>
                         </div>
                         <div class="container2">
                             <p>Mas Baux - BAUX BLOND</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>27,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 13,5°</p>
                         </div>
                     </div>
                     <div class="rouges">
                         <h2>Vins Rouges (75cl)</h2>
                         <div class="container2">
                             <p>Château des Hospices - NOVA ONA</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>18,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 15°</p>
                         </div>
                         <div class="container2">
                             <p>Château l'Esparrou - LE CASTELL</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>20,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Côtes du Roussillon <i>(1,5l)</i></p>
-                            <p>42,00 €</p>
+                            <p>AOP Côtes du Roussillon, 13,5°</p>
+                            <p><i>(1,5l)</i> 42,00 €</p>
                         </div>
                         <div class="container2">
-                            <p>Domaine Lafage - RETRO <i>(1l)</i></p>
-                            <p>22,00 €</p>
+                            <p>Domaine Lafage - RETRO</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
+                            <p><i>(1l)</i> 22,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 13,5°</p>
                         </div>
                         <div class="container2">
                             <p>Château des Hospices - ARTEMIS</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>23,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Côtes du Roussillon</p>
+                            <p>AOP Côtes du Roussillon, 14,5°</p>
                         </div>
                         <div class="container2">
                             <p>Domaine Lafage - AUTHENTIQUE</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>24,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Côtes du Roussillon <i>(50cl)</i></p>
-                            <p>17,00 €</p>
+                            <p>AOP Côtes du Roussillon, 14,5°</p>
+                            <p><i>(50cl)</i> 17,00 €</p>
                         </div>
                         <div class="container2">
                             <p>Château de Rey - SISQUÒ <span class="bio">BIO</span></p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>26,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Côtes du Roussillon</p>
+                            <p>AOP Côtes du Roussillon, 13,5°</p>
                         </div>
                         <div class="container2">
                             <p>Mas Baux - GRAND RED <span class="bio">BIO</span></p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>27,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 15°</p>
                         </div>
                         <div class="container2">
                             <p>Domaine Lafage - NARASSA</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>30,00 €</p>
                         </div>
                         <div class="container">
-                            <p>IGP Côtes Catalanes</p>
+                            <p>IGP Côtes Catalanes, 15°</p>
                         </div>
                         <div class="container2">
                             <p>Cazes - CLOS DE PAULILLES</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>32,00 €</p>
                         </div>
                         <div class="container">
-                            <p>AOP Collioure</p>
+                            <p>AOP Collioure, 14,5°</p>
                         </div>
                     </div>
                     <div class="verre">
                         <h2>Verre/Pichet</h2>
                         <div class="container2">
                             <p>Vin Rouge</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>3,00 € (20cl)</p>
                             <p>7,00 € (50cl)</p>
                         </div>
@@ -379,6 +520,9 @@
                         </div>
                         <div class="container2">
                             <p>Vin Rosé</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>3,00 € (20cl)</p>
                             <p>7,00 € (50cl)</p>
                         </div>
@@ -387,6 +531,9 @@
                         </div>
                         <div class="container2">
                             <p>Vin Blanc</p>
+                            <div class="images-containers">
+                                <img src="./resources/allergies/sulfite.png" alt="Allergie au sulfite">
+                            </div>
                             <p>3,00 € (20cl)</p>
                             <p>7,00 € (50cl)</p>
                         </div>
@@ -624,68 +771,6 @@
                         </div>
                         <div class="container"></div>
                     </div>
-                    <div class="mocktail">
-                        <h2>Mocktails</h2>
-                        <div class="container2">
-                            <p>Exòtic</p>
-                            <p>7,00 €</p>
-                        </div>
-                        <div class="container">
-                            <p>Banane Verte, Fruit de la passion, Goyave, Mangue</p>
-                        </div>
-                        <div class="container2">
-                            <p>Pinya Rosa</p>
-                            <p>7,00 €</p>
-                        </div>
-                        <div class="container">
-                            <p>Ananas, Citron, Framboise</p>
-                        </div>
-                        <div class="container2">
-                            <p>Virgin Mojito</p>
-                            <p>7,50 €</p>
-                        </div>
-                        <div class="container">
-                            <p>Sucre de Canne, Citron Vert, Menthe, Limonade</p>
-                        </div>
-                    </div>
-                    <div class="cocktail">
-                        <h2>Cocktails</h2>
-                        <div class="container2">
-                            <p>Spritz du Castell</p>
-                            <p>7,50 €</p>
-                        </div>
-                        <div class="container">
-                            <p>Crème de Mandarine, Triple Blanc Pétillant LAFAGE, Perrier</p>
-                        </div>
-                        <div class="container2">
-                            <p>Punch</p>
-                            <p>8,00 €</p>
-                        </div>
-                        <div class="container">
-                            <p>Rhum Blanc, Ananas, Goyave, Mangue, Maracuja</p>
-                        </div>
-                        <div class="container2">
-                            <p>Poma Rosa</p>
-                            <p>8,00 €</p>
-                        </div>
-                        <div class="container">
-                            <p>Gin, Liqueur de litchi, Pamplemousse, Jus de Pomme</p>
-                        </div>
-                        <div class="container2">
-                            <p>Cocktail Highball (Alcool + Soft)</p>
-                            <p>8,50 €</p>
-                        </div>
-                        <div class="container">
-                            <p>Ex: Cuba Libre, Gin Tonic, Jägerbomb, Tequila Sunrise, Vodka Redbull...</p>
-                        </div>
-                        <div class="container2">
-                            <p>Mojito</p>
-                            <p>9,00 €</p>
-                        </div>
-                        <div class="container">
-                            <p>Rhum Blanc ou Ambré, Sucre de Canne, Citron Vert, Menthe, Perrier</p>
-                        </div>
-                    </div>
                     <div class="minerale">
                         <h2>Eaux Minérales</h2>
                         <div class="container">
@@ -762,7 +847,7 @@
                             <p>Anchois et poivrons marinés</p>
                         </div>
                         <div class="container2">
-                            <p>Planche de Tapas (à partager à 2)</p>
+                            <p>Planche de Tapas (à partager)</p>
                             <p>20,00 €</p>
                         </div>
                         <div class="container">
@@ -811,64 +896,80 @@
                             <p>Bœuf</p>
                             <p>4,50 €</p>
                         </div>
-                        <div class="container">
+                        <div class="container3">
                             <p>Onglet de bœuf</p>
+                        </div>
+                        <div class="container">
                             <p>Origine : Espagne, Danemark, Pologne, Italie, Royaume-Unis, Lituanie, Pays-Bas</p>
                         </div>
                         <div class="container2">
                             <p>Rognon</p>
                             <p>4,50 €</p>
                         </div>
-                        <div class="container">
+                        <div class="container3">
                             <p>Abats cuits dans leur graisse</p>
+                        </div>
+                        <div class="container">
                             <p>Origine : Espagne, France</p>
                         </div>
                         <div class="container2">
                             <p>Volaille</p>
                             <p>4,50 €</p>
                         </div>
-                        <div class="container">
+                        <div class="container3">
                             <p>Poulet mariné aux épices</p>
+                        </div>
+                        <div class="container">
                             <p>Origine : Espagne, France</p>
                         </div>
                         <div class="container2">
                             <p>Pinxù</p>
                             <p>4,50 €</p>
                         </div>
-                        <div class="container">
+                        <div class="container3">
                             <p>Porc mariné aux épices</p>
+                        </div>
+                        <div class="container">
                             <p>Origine : Espagne</p>
                         </div>
                         <div class="container2">
                             <p>Mallorquine</p>
                             <p>4,50 €</p>
                         </div>
-                        <div class="container">
+                        <div class="container3">
                             <p>Chorizos</p>
+                        </div>
+                        <div class="container">
                             <p>Origine : Espagne</p>
                         </div>
                         <div class="container2">
                             <p>Saucisse</p>
                             <p>4,50 €</p>
                         </div>
-                        <div class="container">
+                        <div class="container3">
                             <p>Saucisse de porc catalane</p>
+                        </div>
+                        <div class="container">
                             <p>Origine : Espagne</p>
                         </div>
                         <div class="container2">
                             <p>Boudin noir catalan</p>
                             <p>4,50 €</p>
                         </div>
-                        <div class="container">
+                        <div class="container3">
                             <p>Boudin noir de porc catalan</p>
+                        </div>
+                        <div class="container">
                             <p>Origine : Espagne</p>
                         </div>
                         <div class="container2">
                             <p>Ris de veau</p>
                             <p>4,50 €</p>
                         </div>
-                        <div class="container">
+                        <div class="container3">
                             <p>Uniquement en saison hivernale</p>
+                        </div>
+                        <div class="container">
                             <p>Origine : Espagne</p>
                         </div>
                         <div class="container2">
@@ -880,7 +981,7 @@
                         </div>
                     </div>
                     <div class="enfant">
-                        <h2>Menu du P'tit Grilladin*</h2>
+                        <h2>Menu du P'tit Grilladin* 11,00 €</h2>
                         <h3>*pour les enfants de moins de 10ans</h3>
                         <div class="container">
                             <p>Sirop à l'eau</p>
@@ -890,10 +991,6 @@
                         </div>
                         <div class="container">
                             <p>Glace aux Smarties</p>
-                        </div>
-                        <div class="container">
-                            <p>Total</p>
-                            <p>11,00 €</p>
                         </div>
                     </div>
                 </div>
@@ -914,7 +1011,7 @@
                     <div class="desserts">
                         <h2>Desserts</h2>
                         <div class="container2">
-                            <p>Coeur coulant au chocolat</p>
+                            <p>Cœur coulant au chocolat</p>
                             <p>5,00 €</p>
                         </div>
                         <div class="container">
@@ -925,7 +1022,7 @@
                             <p>5,00 €</p>
                         </div>
                         <div class="container">
-                            <p>Brûlée au fer</p>
+                            <p>Brûlée au fer dans la braise</p>
                         </div>
                         <div class="container2">
                             <p>Mousse au chocolat</p>
@@ -942,7 +1039,7 @@
                             <p>Servi avec de la chantilly et crème anglaise</p>
                         </div>
                         <div class="container2">
-                            <p>Mel | Mato / Marron | Mato</p>
+                            <p>Mel i Mato / Marron i Mato</p>
                             <p>5,50 €</p>
                         </div>
                         <div class="container">
