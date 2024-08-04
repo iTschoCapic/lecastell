@@ -465,6 +465,11 @@ footer .contacts {
     /* ------------------------------------------------------------- */
     /* ---------------------------  Main --------------------------- */
     /* ------------------------------------------------------------- */
+
+    body main .cartes div {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
     
     body main .cartes .images-container {
         grid-template-columns: repeat(4, 1fr);
