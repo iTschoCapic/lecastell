@@ -228,7 +228,6 @@ body main .categories .images-container img {
     grid-column: span 1;
     grid-row: span 2;
     aspect-ratio: 1 / 2;
-    object-position: 0% center;
 }
 
 .now .i3,
@@ -239,11 +238,17 @@ body main .categories .images-container img {
 }
 
 .now .i1,
-.now .i5,
 .now .i4 {
     grid-column: span 2;
     grid-row: span 1;
     aspect-ratio: 2 / 1;
+}
+
+.now .i5 {
+    grid-column: span 2;
+    grid-row: span 1;
+    aspect-ratio: 2 / 1;
+    object-position: center 0%;
 }
 
 .now .i6 {

@@ -1,4 +1,5 @@
 var Modal = false;
+var SubMenu = false;
 var SubLanguage = false;
 var Photos = 0;
 
@@ -51,10 +52,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuLink = document.getElementById('menu_link');
+    const subMenuLink = document.getElementById('submenu');
     menuLink.addEventListener('click', function (event) {
         if (window.innerWidth <= 768) {
             event.preventDefault();  // Prevent the link from being followed
-            this.parentElement.classList.toggle('focus-within');  // Toggle the display of the submenu
+            if (subMenuLink.style.display == 'block'){
+                subMenuLink.style.display = 'none';
+                SubMenu = false;
+            } else {
+                subMenuLink.style.display = 'block';
+                SubMenu = true;
+            }
+            
+
         }
     });
 });
@@ -147,6 +157,9 @@ window.onclick = function(event){
         if (Modal && (event.target.matches('.close') || !event.target.matches('.card'))){
             Modal = false;
             document.getElementById('cardFull').style.display = 'none';
+        } else if (SubMenu && !event.target.matches('#menu_link')) {
+            SubMenu = false;
+            document.getElementById('submenu').style.display = 'none';
         } else if (Photos != 0){
             var source;
             if (Photos == 1) {
