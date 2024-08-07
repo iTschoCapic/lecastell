@@ -9,9 +9,9 @@ var Photos = 0;
 
 document.addEventListener('DOMContentLoaded', (event) => {
     if (window.innerWidth >= 768){
-        // if (location.pathname != '/' && location.pathname != '/index.html'){
-        //     return;
-        // }
+        if (location.pathname != '/' && location.pathname != '/index.html'){
+            return;
+        }
 
         var textH = document.getElementById('text-header');
         textH.style.animation = 'slideInTextHeader 0.5s forwards';
