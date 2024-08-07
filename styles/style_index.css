@@ -223,6 +223,10 @@ body main .cartes h3 {
     font-weight: normal;
 }
 
+body main .cartes p {
+    text-wrap: nowrap;
+}
+
 body main .cartes .bio {
     color: green;
 }
@@ -265,7 +269,7 @@ body main .cartes .container3 {
 
 body main .cartes .images-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5rem;
     padding: 1rem;
     background-color: #000000;
@@ -284,26 +288,14 @@ body main .cartes .cocktails .images-container .c1 {
 }
 
 body main .cartes .cocktails .images-container .c2 {
-    object-position: center 35%;
-}
-
-body main .cartes .cocktails .images-container .c3 {
-    object-position: center 20%;
+    object-position: center 30%;
 }
 
 body main .cartes .cocktails .images-container .c4 {
     object-position: center 30%;
 }
 
-/* body main .cartes .cocktails .images-container .c5, .c6, .c9, .c10, .c12, .c13 {
-    object-position: center 50%;
-} */
-
-body main .cartes .cocktails .images-container .c7 {
-    object-position: center 30%;
-}
-
-body main .cartes .cocktails .images-container .c8 {
+body main .cartes .cocktails .images-container .c5 {
     object-position: center 30%;
 }
 
@@ -317,6 +309,86 @@ body main .cartes .plats .sauce .container {
 
 body main .cartes .plats .sauce .container:last-child {
     font-weight: normal;
+}
+
+body main .cartes .vins .images-container .v1 {
+    object-position: center 70%;
+}
+
+body main .cartes .vins .images-container .v2 {
+    object-position: center 70%;
+}
+
+body main .cartes .vins .images-container .v3 {
+    object-position: center 70%;
+}
+
+body main .cartes .vins .images-container .v4 {
+    object-position: center 70%;
+}
+
+body main .cartes .vins .images-container .v5 {
+    object-position: center 70%;
+}
+
+body main .cartes .boissons .images-container .b1 {
+    object-position: center 40%;
+}
+
+body main .cartes .boissons .images-container .b3 {
+    object-position: center 55%;
+}
+
+body main .cartes .boissons .images-container .b4 {
+    object-position: center 60%;
+}
+
+body main .cartes .boissons .images-container .b5 {
+    object-position: center 55%;
+}
+
+body main .cartes .boissons .images-container .b6 {
+    object-position: center 45%;
+}
+
+body main .cartes .boissons .images-container .b7 {
+    object-position: center 55%;
+}
+
+body main .cartes .plats .images-container .p4 {
+    object-position: center 40%;
+}
+
+body main .cartes .plats .images-container .p4 {
+    object-position: center 55%;
+}
+
+body main .cartes .plats .images-container .p4 {
+    object-position: center 60%;
+}
+
+body main .cartes .plats .images-container .p4 {
+    object-position: center 55%;
+}
+
+body main .cartes .plats .images-container .p4 {
+    object-position: center 45%;
+}
+
+body main .cartes .plats .images-container .p4 {
+    object-position: center 55%;
+}
+
+body main .cartes .desserts .images-container .d2 {
+    object-position: center 25%;
+}
+
+body main .cartes .desserts .images-container .d3 {
+    object-position: center 25%;
+}
+
+body main .cartes .desserts .images-container .d5 {
+    object-position: 55% center;
 }
 
 /* ------------------------------------------------------------- */
