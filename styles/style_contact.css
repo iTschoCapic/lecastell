@@ -283,10 +283,6 @@ footer .contacts {
         width: 1rem;
         margin-left: 0.5rem;
     }
-
-    body nav .onglets .menu:focus-within .submenu {
-        display: block;
-    }
     
     /* ------------------------------------------------------------- */
     /* --------------  Image : Logo, Background color -------------- */

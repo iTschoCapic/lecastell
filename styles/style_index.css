@@ -458,7 +458,7 @@ footer .contacts {
     /* ------------------------------------------------------------ */
     /* ---------------------  Navigation Menu --------------------- */
     /* ------------------------------------------------------------ */
-    
+   
     body nav {
         flex-direction: column;
         padding-left: 4rem;
@@ -531,6 +531,12 @@ footer .contacts {
     
     body main .cartes .images-containers img{
         width: 2rem;
+    }
+
+    body main .cartes .container p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
 
     /* ------------------------------------------------------------- */
