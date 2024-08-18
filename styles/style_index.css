@@ -124,8 +124,16 @@ body .header {
     color: #ffffff;
     min-height: 50rem;
     max-height: 50rem;
-    transition: opacity 0.7s ease-in-out;
-    opacity: 1;
+    z-index: 3;
+}
+
+@keyframes backgroundImageSwap {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 body .header .text-header p {
@@ -164,7 +172,8 @@ body .logo a img{
     max-height: 100%;
     width: 8rem;
     border-radius: 50%;
-    background-color: rgba(39, 38, 38, 0.849);
+    background-color: rgba(39, 38, 38, 1);
+    
 }
 
 /* ---------------------  'Text' over background image --------------------- */

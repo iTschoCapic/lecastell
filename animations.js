@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ];
         let currentIndex = 0;
         setInterval(() => {
-            header.style.opacity = 0;
+
             setTimeout(() => {
                 currentIndex = (currentIndex + 1) % images.length;
                 header.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url(${images[currentIndex]})`;
-                header.style.opacity = 1;
+                header.style.animation = `backgroundImageSwap 1.5s`
             }, 500); // Match this time with the CSS transition duration
         }, 10000);
     }
